@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;      
+    box-sizing: border-box;
+ }
+
+ body{
+  font-family: "Roboto", sans-serif;
+  background-image: url("pattern.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+ }
+ .overRall{
+     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+ }
+ .containerPart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+ }
+ .containerPart h1{
+     color: #FF7601;
+     letter-spacing: 2px;
+
+    }
+ .containerPart button{
+    color: #fff;
+    background-color: #16610E;
+    padding: 6px 30px 6px 30px;
+    border: none;
+
+    
+ }
+ .question{
+    color: #16610E;
+ }
+ input{
+    color: #FF7601;
+    background-color: #FF7601;
+ }
+ .questionsAndAnswer{
+    display: flex;
+    align-items: center;
+
+    
+ }
+ .displayedAnswer{
+    display: none;
+    flex-direction: column;
+    
+ }
+ #nextBtn{
+    color: #FF7601;
+    background-color: #16610E;
+    padding: 4px 25px 4px 25px;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+ }
+ #nextBtn:hover{
+color: #fff;
+background-color:#FF7601;
+ }
+ .q{
+
+ }
+ .containerPart button:hover{
+    color:#fff;
+    background-color: #FF7601;
+    font-weight: 800;
+ }
+ p{
+    color: black;
+    font-weight: 500;
+ }
+ .brain{
+    width: 300px;
+ }
+.answers{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+ .lineAnswer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+/* lable code design */
+
+
+ .lineAnswer input{
+transform: scale(1.5);
+ }
+@media (max-width:589px) {
+     .containerPart{
+        text-align: center;
+     }
+      .questionsAndAnswer{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    
+ }
+}
