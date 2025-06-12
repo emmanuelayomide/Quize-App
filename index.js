@@ -1,13 +1,14 @@
 const questions = [
-  {
-    question: "What is the capital of France?",
-    options: ["Paris", "London", "Berlin", "Madrid"],
-    correctAnswer: "Paris"
-  },
+ 
   {
     question: "Which language is used for web development?",
     options: ["Python", "C++", "JavaScript", "Java"],
     correctAnswer: "JavaScript"
+  },
+   {
+    question: "What is the capital of France?",
+    options: ["Paris", "London", "Berlin", "Madrid"],
+    correctAnswer: "Paris"
   },
   {
     question: "What is 2 + 2?",
@@ -24,7 +25,168 @@ const questions = [
       "Creative Style Syntax"
     ],
     correctAnswer: "Cascading Style Sheets"
-  }
+  },
+  {
+  question: "Which gas do plants absorb from the atmosphere during photosynthesis?",
+  options: [
+    "Oxygen",
+    "Carbon Monoxide",
+    "Nitrogen",
+    "Carbon Dioxide"
+  ],
+  correctAnswer: "Carbon Dioxide"
+},
+{
+  question: "In what year did Nigeria gain independence from British colonial rule?",
+  options: [
+    "1957",
+    "1960",
+    "1963",
+    "1970"
+  ],
+  correctAnswer: "1960"
+},
+{
+  question: "What is the main purpose of an operating system in a computer?",
+  options: [
+    "To provide internet access",
+    "To compile programming code",
+    "To manage hardware and software resources",
+    "To enhance graphics quality"
+  ],
+  correctAnswer: "To manage hardware and software resources"
+},
+{
+  question: "Which planet is known as the 'Red Planet'?",
+  options: [
+    "Venus",
+    "Mars",
+    "Jupiter",
+    "Saturn"
+  ],
+  correctAnswer: "Mars"
+},
+{
+  question: "Who is the author of the famous play 'Romeo and Juliet'?",
+  options: [
+    "William Wordsworth",
+    "William Shakespeare",
+    "George Orwell",
+    "Jane Austen"
+  ],
+  correctAnswer: "William Shakespeare"
+},
+{
+  question: "What does the acronym 'URL' stand for in web terminology?",
+  options: [
+    "Uniform Resource Locator",
+    "Universal Reference Link",
+    "User Readable Language",
+    "Unified Routing Layer"
+  ],
+  correctAnswer: "Uniform Resource Locator"
+},
+{
+  question: "Which human organ is primarily responsible for detoxification?",
+  options: [
+    "Lungs",
+    "Liver",
+    "Kidneys",
+    "Heart"
+  ],
+  correctAnswer: "Liver"
+},
+{
+  question: "What is the currency of Japan?",
+  options: [
+    "Won",
+    "Yuan",
+    "Yen",
+    "Ringgit"
+  ],
+  correctAnswer: "Yen"
+},
+{
+  question: "Which of the following is NOT a programming language?",
+  options: [
+    "Python",
+    "Ruby",
+    "HTML",
+    "Jupiter"
+  ],
+  correctAnswer: "Jupiter"
+},
+{
+  question: "What is the boiling point of water at standard atmospheric pressure?",
+  options: [
+    "100°C",
+    "90°C",
+    "120°C",
+    "80°C"
+  ],
+  correctAnswer: "100°C"
+},
+{
+  question: "Who was the first man to step on the moon?",
+  options: [
+    "Buzz Aldrin",
+    "Neil Armstrong",
+    "Yuri Gagarin",
+    "Michael Collins"
+  ],
+  correctAnswer: "Neil Armstrong"
+},
+{
+  question: "What is the function of the Ctrl + Z shortcut in most computer programs?",
+  options: [
+    "Redo",
+    "Zoom in",
+    "Undo",
+    "Save"
+  ],
+  correctAnswer: "Undo"
+},
+{
+  question: "Which African country is the largest by land area?",
+  options: [
+    "Nigeria",
+    "Algeria",
+    "Sudan",
+    "South Africa"
+  ],
+  correctAnswer: "Algeria"
+},
+{
+  question: "In economics, what does GDP stand for?",
+  options: [
+    "Gross Domestic Product",
+    "Global Development Plan",
+    "General Data Protection",
+    "Gross Demand Percentage"
+  ],
+  correctAnswer: "Gross Domestic Product"
+},
+{
+  question: "Which of the following is a renewable source of energy?",
+  options: [
+    "Coal",
+    "Natural Gas",
+    "Solar",
+    "Petroleum"
+  ],
+  correctAnswer: "Solar"
+},
+{
+  question: "What is the chemical symbol for gold?",
+  options: [
+    "Gd",
+    "Au",
+    "Ag",
+    "Go"
+  ],
+  correctAnswer: "Au"
+}
+
 ];
 
 
@@ -33,6 +195,7 @@ const currentQuestionIndexNumber = 1;
 let score = 0;
 
 function startQuiz() {
+  alert(questions.length + " Questions are Available to be anwered");
   document.querySelector('.displayedAnswer').style.display = 'flex';
   document.querySelector('.containerPart').style.display = 'none';
   document.querySelector('.quiz-content').innerHTML = ''; // reset questions
